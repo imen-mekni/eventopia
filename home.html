@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="home.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Contact eventtopia</title>
+</head>
+<body>
+ <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand">EVENTOPIA</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+    </ul>
+    <form class="form">
+      <div id="search" >
+        <input type="text" class="input" placeholder="Search" name="search">
+      <button type="submit" class="button">Submit</button>
+      </div>
+    </form>
+  </div>
+</nav>
+
+
+  <center>
+  <div class="container">
+    <h1>Contact Us</h1>
+    <p>Please fill .</p>
+    <hr>
+    <label class="email"><b>Email: </b></label>
+    <input type="text" placeholder="Enter Email"  id="email" required>
+
+    <label class="eventtype"><b>Event Type: </b></label>
+    <input type="text" placeholder="Enter Event Type" id="eventype" required>
+
+    <label class="fln"><b>First name & Last name: </b></label>
+    <input type="text" placeholder="Enter your full name" id="fln" required>
+<br>
+    <label class="message"><b>Message: </b></label>
+    <input type="text" placeholder="Message" id="message" required>
+    <hr>
+
+    <button id="button"  onclick=send()>send your message 🎲 </button>
+  </div>
+
+  <div class="container signin">
+    <p>Already have an account? <a href="login.html">Sign in</a>.</p>
+  </div>
+</center>
+
+
+    
+  
+
+
+
+
+
+
+
+<script src="home.js"></script>
+</body>
+</html>

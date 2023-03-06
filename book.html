@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="book.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Payment eventtopia</title>
+</head>
+<body>
+ <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand">EVENTOPIA</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Page 1</a></li>
+      <li><a href="#">Page 2</a></li>
+    </ul>
+    <form class="form">
+      <div id="search" >
+        <input type="text" class="input" placeholder="Search" name="search">
+      <button type="submit" class="button">Submit</button>
+      </div>
+    </form>
+  </div>
+</nav>
+
+<center>
+<h2>Pyament Page</h2>
+<p>You need to full all inputs with correct messages to book your ticket</p>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      
+
+          <div class="container">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text"  placeholder="John More Doe">
+            <br>
+            <label for="ccnum">Credit card number</label>
+            <input type="text"  placeholder="1111-2222-3333-4444">
+            <br>
+            <label for="expmonth">Exp Month</label>
+            <input type="text"  placeholder="September">
+            <br>
+            <label for="expyear">Exp Year</label>
+            <input type="text"  placeholder="2018">
+            <br>
+            <label for="cvv">CVV</label>
+            <input type="text" placeholder="352">
+            <br>
+          
+          
+        </div>
+       <br> <br> <br>
+       <button id="button" class="btn" onclick=book()>Bookyour ticket 🎲  </button>
+
+      
+    </div>
+  </div>
+ 
+</div>
+
+</center>
+
+    
+  
+
+
+
+
+
+
+
+<script src="book.js"></script>
+</body>
+</html>

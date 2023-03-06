@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="sweetalert2.all.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body style="background-color: black;" >
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand">EVENTOPIA</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">about us </a></li>
+            <li><a href="eventlist.html">event list</a></li>
+            <li id="login"><a href="login.html">Login</a></li>
+            <li id="book"><a href="login.html">Book your ticket</a></li>
+            <li id="basket"><a href="#">Basket <span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+          </ul>
+          <form class="form">
+            <div id="search" >
+              <input type="text" class="input" placeholder="Search" name="search">
+            <button type="submit" class="button">Search</button>
+            </div>
+          </form>
+        </div>
+      </nav>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <ul class="nav navbar-nav">
+            <li><button class="filter-btn" data-filter="all">All</button></li>
+            <li><button id="art" data-filter="arts">Arts</button></li>
+            <li><button class="filter-btn" data-filter="music">Music</button></li>
+            <li><button class="filter-btn" data-filter="kidos">Kidos</button></li>
+            <li><button class="filter-btn" data-filter="sports">Sports</button></li>
+          </ul>
+        </div>
+      </nav>
+    <div>
+      <div class="arts">
+        <h2>Arts</h2>
+        <img class="img" src="./assets/art1.jpg">
+          <time datetime="2022"></time>
+            <img class="img" src="./assets/art2.jpg">
+              <time datetime="2022"></time>
+              <img class="img" id="long" src="./assets/art3.jpg">
+            <time datetime="2022"></time>
+            <img class="img" src="./assets/art4.jpg">
+            <time datetime="2022"></time>
+          </div>
+          <div class="sport">
+            <h2>Sports</h2>
+            <img class="img" src="./assets/sport1.jpg">
+              <time datetime="2022"></time>
+                <img class="img" src="./assets/sport2.jpg">
+                  <time datetime="2022"></time>
+                  <img class="img" id="long" src="./assets/sport3.jpg">
+                <time datetime="2022"></time>
+                <img class="img" src="./assets/sport4.jpg">
+                <time datetime="2022"></time>
+              </div>
+              <div class="music">
+                <h2>Music</h2>
+                <img class="img" src="./assets/music1.jpg">
+                  <time datetime="2022"></time>
+                    <img class="img" src="./assets/music2.jpg">
+                      <time datetime="2022"></time>
+                      <img class="img" id="long" src="./assets/music3.jpg">
+                    <time datetime="2022"></time>
+                    <img class="img" src="./assets/music4.jpg">
+                    <time datetime="2022"></time>
+                    <img class="img" src="./assets/music5.jpg">
+                    <time datetime="2022"></time>
+                    <img class="img" src="./assets/music6.jpg">
+                    <time datetime="2022"></time>
+                    <img class="img" src="./assets/music7.jpg">
+                    <time datetime="2022"></time>
+                  </div>
+                  <div class="kidos">
+                    <h2>Kidos</h2>
+                    <img class="img" src="./assets/kidos1.jpg" >
+                      <time datetime="2022"></time>
+                        <img class="img" src="./assets/kidos2.jpg">
+                          <time datetime="2022"></time>
+                          <img class="img" id="long" src="./assets/kidos3jpg.jpg">
+                        <time datetime="2022"></time>
+                        <img class="img" src="./assets/kidos5.jpg">
+                        <time datetime="2022"></time>
+                </div>
+            
+
+
+
+        
+        </div>
+       
+
+
+<script src="script.js"></script>
+</body>
+</html>
