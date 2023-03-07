@@ -5,50 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="frontpage.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="sweetalert2.all.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body style="background-color: black;" >
-    <nav class="navbar navbar-inverse">
+<body style="background-image: url(https://img.freepik.com/premium-vector/curved-white-lines-black-background-abstract-pattern_88653-418.jpg?w=740);" >
+    <nav class="navbar navbar-inverse" id="navbar" >
         <div class="container-fluid">
           <div class="navbar-header">
             <a class="navbar-brand">EVENTOPIA</a>
           </div>
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">about us </a></li>
-            <li><a href="eventlist.html">event list</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="#">About us </a></li>
+            <li><a href="eventlist.html">Event list</a></li>
             <li id="login"><a href="login.html">Login</a></li>
             <li id="book"><a href="login.html">Book your ticket</a></li>
-            <li id="basket"><a href="#">Basket <span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+            <li id="add-to-cart"><a href="#">Basket <span class="glyphicon glyphicon-shopping-cart"></span></a></li>
           </ul>
-          <form class="form">
-            <div id="search" >
-              <input type="text" class="input" placeholder="Search" name="search">
+          <div id="search">
+            <input type="text" class="input" placeholder="Search" name="search">
             <button type="submit" class="button">Search</button>
-            </div>
-          </form>
+            <ion-icon name="search-outline"></ion-icon>
+          </div>
+         
+          <div id="gallery"></div>
+          
         </div>
       </nav>
-      <nav class="navbar navbar-default">
+      <nav class="navbar navbar-default" id="navbar2" >
         <div class="container-fluid">
           <ul class="nav navbar-nav">
-            <li><button class="filter-btn" data-filter="all">All</button></li>
-            <li><button id="art" data-filter="arts">Arts</button></li>
-            <li><button class="filter-btn" data-filter="music">Music</button></li>
-            <li><button class="filter-btn" data-filter="kidos">Kidos</button></li>
-            <li><button class="filter-btn" data-filter="sports">Sports</button></li>
+            <button onclick="showImages('arts')">Arts</button>
+            <button onclick="showImages('kidos')">Kidos</button>
+             <button onclick="showImages('sport')">Sports</button>
+              <button onclick="showImages('music')">Music</button>
+              <button onclick="location.reload()">All</button>
           </ul>
         </div>
       </nav>
     <div>
       <div class="arts">
-        <h2>Arts</h2>
-        <img class="img" src="./assets/art1.jpg">
+        <h2 id="hloul">Arts</h2>
+        <img class="img" src="./assets/art1.jpg"  >
           <time datetime="2022"></time>
             <img class="img" src="./assets/art2.jpg">
               <time datetime="2022"></time>
@@ -58,7 +63,7 @@
             <time datetime="2022"></time>
           </div>
           <div class="sport">
-            <h2>Sports</h2>
+            <h2 id="hloul">Sports</h2>
             <img class="img" src="./assets/sport1.jpg">
               <time datetime="2022"></time>
                 <img class="img" src="./assets/sport2.jpg">
@@ -69,7 +74,7 @@
                 <time datetime="2022"></time>
               </div>
               <div class="music">
-                <h2>Music</h2>
+                <h2 id="hloul">Music</h2>
                 <img class="img" src="./assets/music1.jpg">
                   <time datetime="2022"></time>
                     <img class="img" src="./assets/music2.jpg">
@@ -86,7 +91,7 @@
                     <time datetime="2022"></time>
                   </div>
                   <div class="kidos">
-                    <h2>Kidos</h2>
+                    <h2 id="hloul">Kidos</h2>
                     <img class="img" src="./assets/kidos1.jpg" >
                       <time datetime="2022"></time>
                         <img class="img" src="./assets/kidos2.jpg">
@@ -97,11 +102,11 @@
                         <time datetime="2022"></time>
                 </div>
             
-
-
-
+                
+           </div>
         
-        </div>
+      </div>
+      
        
 
 

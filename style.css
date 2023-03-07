@@ -13,6 +13,56 @@
  #long{
     height: 310px;
  } 
- #basket {
+ 
   
- }    
+   
+ .navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+    border-radius: 0;
+    border: none;
+    padding-top: 10px ;
+  }
+  
+  .navbar button {
+    background-color: #fff;
+    border: none;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    margin-right: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .navbar button:hover {
+    color: #f5e8e8;
+    background-color: #000000;
+  }
+  
+  .navbar button:focus {
+    outline: none;
+  }
+  img {
+    max-width: 100%;
+  }
+  
+  .small-img {
+    max-width: 12%;
+    
+  }
+  #navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+  }
+#navbar2 {
+    margin-top: 100px;
+    
+}
+#hloul {
+  color: rgb(253, 250, 250);
+  padding: 10px;
+  border-radius: 5px;
+  
+}
+
