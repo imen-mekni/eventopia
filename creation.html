@@ -4,21 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creation</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="book.css">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <title>Payment eventtopia</title>
 </head>
 <body>
+    <center>
 
 
-<center>
-
-
-        <h2>Pyament Page</h2>
-        <p>You need to full all inputs <br>with correct messages to book your ticket</p>
+        <h2>creation Page</h2>
+        <p>You need to full all inputs <br>with correct messages to create compte</p>
         
                   
                     <div class="background">
@@ -26,40 +24,28 @@
                       <div class="shape"></div>
                   </div>
                   <form>
-                      <h3>Book Your Ticket Here</h3>
+                      <h3>Create a compte here</h3>
               
-                      <label for="cname">Name on Card</label>
-                      <input type="text"  placeholder="John More Doe">
+                      <label for="cname"> Username </label>
+                      <input type="text"  placeholder="First Name" id="userName">
         
-                      <label for="ccnum">Credit card number</label>
-                      <input type="text"  placeholder="1111-2222-3333-4444">
         
-                      <label for="expmonth">Exp Month</label>
-                      <input type="text"  placeholder="September">
+                      <label for="expmonth">Password</label>
+                      <input type="password"  placeholder="password" id="pw">
                       
-                      <label for="expyear">Exp Year</label>
-                      <input type="text"  placeholder="2018">
+                      <label for="expyear">Email</label>
+                      <input type="text"  placeholder="email">
                       
-                      <label for="cvv">CVV</label>
-                      <input type="text" placeholder="352">
+                      
                     </form>
-                    <div> <button onclick="book()">Sumbit</button></div>
+                    <div> <button onclick="creation()">Sumbit</button></div>
 
       
     
 
 
 </center>
+<script src="script.js"></script>
 
-    
-  
-
-
-
-
-
-
-
-<script src="book.js"></script>
 </body>
 </html>

@@ -4,34 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="script.js"></script>
+    <title>Login Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+
+    <link rel="stylesheet" href="login.css">
+
 </head>
 <body>
-    <center>
+    
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
     <div class="login">
         <form name='form-login'>
-    
+
             <h1>SIGN IN</h1>
-    
+
             <label for="userName">Email</label>
             <input type="email" id="userName" placeholder="Username" required>
-          
+
             <label for="userPw">Password</label>
             <input type="password" id= "pw" placeholder="Password" required>
-    
-            <div id="remember">
-                <input type="checkbox" value="lsRememberMe" id="rememberMe"
-                       style="display: inline-block;">
-                <label> Remember me</label>
-               
-            </div>
-            <button id="submit" onclick="store()"> submit  </button>
-    
+
+        
+           <button id="submit" > submit  </button> 
+
         </form>
     </div>
-</center>
 
+    <script src="script.js"></script>
 
 </body>
 </html>
