@@ -1,12 +1,3 @@
-var array = [{ email: "arbi@moussi.com", passe: "12345" }];
-// function store() {
-//   for(var i=0;i<array.length;i++){
-//   if ((array[i]['email']===document.getElementById("userName").value)&& (array[i]['passe']===document.getElementById("pw").value))
-
-//      {window.location="book.html"}
-//    else
-//    {swal("", "you don't have a compte ", "warning");}
-// }}
 
 $("#submit").click(function (event) {
   event.preventDefault();
