@@ -12,7 +12,4 @@ function book(){
   }
 
 
-  function search(){
-      var s=$('input')[0].value
-      if (s==='Arts') {} 
-  }
+ 
